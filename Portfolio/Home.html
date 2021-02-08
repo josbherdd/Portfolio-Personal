@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>portafolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/75d7b7f712.js" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+
+</head>
+<body>
+  <header>
+    <input id="nav-toggle" type="checkbox">
+    <a href="#" class="logo">JH</a>
+    <nav>
+      <ul class="redes">
+        <li><a href="https://www.behance.net/josbher155?tracking_source=search_users_recommended%7Cjosber%20hernandez" target="none"><i class="fab fa-behance"></i></a></li>
+        <li><a href="https://www.instagram.com/josbherdd/" target="none"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.youtube.com/channel/UCh6kzry_qyuBoGox4E59smw" target="none"><i class="fab fa-youtube"></i></a></li>
+      </ul>
+    </nav>
+    <ul class="secciones">
+      <li><a href="#">Home</a></li>
+      <li><a href="contact.html">contacto</a></li>
+    </ul> 
+    <label for="nav-toggle" class="icon-burger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </label>
+  </header> 
+
+  <div class="distintivo">
+    <div><h1>JOSBER HERNANDEZ</h1></div>
+    <div class="tags"><h4>ui • ux • designer • </h4>
+      <h4 class="typing" ></h4></div>
+ </div>
+
+ <div class="trabajos">
+   <div class="trabajo">
+      <div class="trabajo1" onclick="trabajoClick('https://www.instagram.com/josbherdd/')"><a href="#"></a></div>
+      <div class="trabajo2" onclick="trabajoClick('https://www.instagram.com/josbherdd/')"></div>
+      <div class="trabajo3" onclick="trabajoClick('https://www.instagram.com/josbherdd/')"></div>
+      <div class="trabajo4" onclick="trabajoClick('https://www.instagram.com/josbherdd/')"></div>
+      <div class="trabajo5" onclick="trabajoClick('https://www.instagram.com/josbherdd/')"></div>
+      <div class="trabajo6" onclick="trabajoClick('https://www.instagram.com/josbherdd/')"></div>
+    </div>
+ </div>
+
+ <footer class="footer">
+   <div class="copy"><h4>Desarrollado por Josber Hernandez 2020®</h4></div>
+ </footer>
+ <script>
+   
+(function type(){
+    if (count === texts.length){
+      count = 0;
+    }
+    currentText = texts[count];
+    letter = currentText.slice(0, ++index);
+    console.log(letter)
+    document.querySelector(".typing").textContent = letter;
+    if (letter.length === currentText.length) {
+      count++;
+      index = 0;
+    }
+    setTimeout(type, 400);
+})();
+ </script>
+  
+  
+</body>
+</html>

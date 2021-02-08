@@ -1,0 +1,471 @@
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #F5F5F5;
+}
+
+a{
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 7%;
+  height: 100px;
+}
+
+.redes{
+  list-style: none;
+  display: flex;
+}
+
+.redes li{
+  display: flex;
+  padding: 0px 20px;
+}
+.redes i{
+  font-size: 22pt;
+  color: #F05454;
+  padding-top: 15px;
+}
+
+.logo {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: black;
+  font-size: 26pt;
+}
+
+.secciones{
+  list-style: none;
+  display: flex;
+}
+
+.secciones li{
+  display: flex;
+  padding: 0px 7px;
+}
+.secciones a{
+  font-family: 'Roboto', sans-serif;
+  font-size: 14pt;
+  color: black;
+}
+
+
+#nav-toggle{
+  position: absolute;
+  top: -100px;
+}
+
+.icon-burger{
+  right: 5%;
+  top: 50%; 
+  display: none;
+  
+}
+
+.icon-burger .line {
+  width: 30px;
+  height: 5px;
+  background-color: #F05454;
+  margin: 5px;
+  border-radius: 3px;
+}
+
+
+
+.distintivo{
+  padding-top: 300px;
+  padding-bottom: 100px;
+  display: grid;
+  grid-template-rows:auto 70px;
+}
+.distintivo div{
+  text-align: center;
+  background-color: #F5F5F5;
+  
+}
+
+.distintivo h1{
+  font-size: 60pt;
+  color: #222831;
+  font-family:'Segoe UI';
+}
+
+.distintivo H4{
+  font-size: 28pt;
+  font-family:'Segoe UI';
+  font-weight: lighter;
+  color: #2b3038;
+}
+
+.tags{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.typing{
+  position: relative;
+  margin-left: 10px;
+}
+
+.typing::after{
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 70%;
+  right: -7px;
+  border-right: 2px solid #2b3038;
+  padding-top: 15px;
+  animation: blink 0.9s infinite ease;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.trabajos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row;
+  width: auto;
+  height: 1800px;
+  background-color:#F5F5F5;
+}
+.trabajo{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows:570px 570px 570px;
+  gap: 7px;
+  background-color: #F5F5F5;
+  width: 60%;
+}
+
+.trabajo a{
+  display: block;
+}
+
+.trabajo >:hover{
+  cursor: pointer;
+}
+
+.trabajo .trabajo1{
+  background-image: url("./imagenes/aicore\ brand.png");
+  background-size:  cover;
+  background-color: #222831;
+  border-radius: 5px;
+}
+
+.trabajo .trabajo2{
+  background-image: url("./imagenes/chinco.png");
+  background-size:  cover;
+  background-color: #222831;
+  border-radius: 5px;
+}
+
+.trabajo .trabajo3{
+  background-image: url("./imagenes/jose\ gregorio.png");
+  background-size:  cover;
+  background-color: #222831;
+  border-radius: 5px;
+}
+
+.trabajo .trabajo4{
+  background-image: url("./imagenes/occicarga.png");
+  background-size:  cover;
+  background-color: #222831;
+  border-radius: 5px;
+}
+
+.trabajo .trabajo5{
+  background-image: url("./imagenes/profab.PNG");
+  background-size:  cover;
+  background-color: #222831;
+  border-radius: 5px;
+}
+
+.trabajo .trabajo6{
+  background-image: url("./imagenes/aicoreUI.PNG");
+  background-size:  cover;
+  background-color: #222831;
+  border-radius: 5px;
+}
+
+.footer{
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.footer h4{
+  align-items: center;
+  justify-content: center;
+  font-size: 10pt;
+  color: #222831;
+  font-family:'Segoe UI';
+}
+/* vista contacto */
+
+.contacto{
+  grid-template-rows:auto 70px;
+  padding-top: 120px;
+}
+.contacto div{
+  text-align: center;
+  background-color: #F5F5F5;
+  
+}
+.contacto H4{
+  font-size: 28pt;
+  font-family:'Segoe UI';
+  font-weight: lighter;
+  color: #2b3038;
+}
+
+/* cuadro de contacto(para editar por que es copiado)*/
+.container{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 50px;
+}
+
+.container:after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	/* background: url("./imagenes/vaca.PNG") no-repeat center; */
+	background-size: cover;
+	filter: blur(50px);
+	z-index: -1;
+}
+.contact-box{
+	max-width: 850px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #fff;
+	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.1);
+}
+
+.left{
+	background: url("./imagenes/vaca.PNG") no-repeat center;
+	background-size: cover;
+	height: 100%;
+}
+
+.right{
+  padding: 25px 40px;
+  height: 550px;
+}
+
+h2{
+	position: relative;
+	padding: 0 0 10px;
+	margin-bottom: 10px;
+}
+
+h2:after{
+	content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #F05454;
+}
+
+.field{
+	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 1rem;
+	margin-bottom: 44px;
+  transition: .3s;
+  font-family: 'Segoe UI';
+}
+
+.field:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea{
+	min-height: 150px;
+}
+
+.btn{
+	width: 100%;
+	padding: 0.5rem 1rem;
+	background-color: #F05454;
+	color: #fff;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.btn:hover{
+    background-color: #27ae60;
+}
+
+.field:focus{
+    border: 2px solid rgba(30,85,250,0.47);
+    background-color: #fff;
+}
+
+@media screen and (max-width: 880px){
+	.contact-box{
+		grid-template-columns: 1fr;
+	}
+	.left{
+		height: 200px;
+	}
+}
+
+.footercontacto{
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.footercontacto h4{
+  align-items: center;
+  justify-content: center;
+  font-size: 10pt;
+  color: #222831;
+  font-family:'Segoe UI';
+  padding-top: 80px;
+}
+
+@media screen and (max-width: 768px) {
+  .logo{
+    float: left;
+    width: auto;
+  }
+
+  .redes i{
+    padding-top: 0px;
+  }
+
+  .secciones{
+    float: none;
+    position: fixed;
+    z-index: 9;
+    left: 0;
+    right: 0;
+    top: 100px;
+    bottom: 100%;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #F05454;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+  }
+
+  .secciones li{
+    background-color: #F05454;
+  }
+  .secciones a{
+    background-color: #F05454;
+    color: #F5F5F5;
+    font-size: 24pt;
+    padding-left: 35%;
+  }
+
+  :checked ~ .secciones {
+    bottom: 0;
+  }
+  
+  .icon-burger{
+    display: block;
+  }
+
+  .trabajos{
+    height: 2500px;
+  }
+ 
+  .trabajo{
+    grid-template-rows:400px 400px 400px 400px 400px 400px;
+    width: 90%;
+  }
+
+
+  .distintivo{
+    padding-top: 250px;
+    padding-bottom: 150px;
+  }
+
+  .tags{
+    display: grid;
+  }
+  .distintivo h1{
+    font-size: 25pt;
+  }
+
+  .distintivo h4{
+    font-size: 24pt;
+  }
+
+  .trabajo .trabajo1{
+    background-color: #222831;
+    border-radius: 5px;
+    grid-column: 1/3;
+  }
+  .trabajo .trabajo2{
+    background-color: #222831;
+    border-radius: 5px;
+    grid-column: 1/3;
+  }
+  .trabajo .trabajo3{
+    background-color: #222831;
+    border-radius: 5px;
+    grid-column: 1/3;
+  }
+  .trabajo .trabajo4{
+    background-color: #222831;
+    border-radius: 5px;
+    grid-column: 1/3;
+  }
+  .trabajo .trabajo5{
+    background-color: #222831;
+    border-radius: 5px;
+    grid-column: 1/3;
+  }
+  .trabajo .trabajo6{
+    background-color: #222831;
+    border-radius: 5px;
+    grid-column: 1/3;
+  }
+  /* vista contacto */
+  .contacto{
+    grid-template-rows:auto 70px;
+    padding-top: 30px;
+  }
+
+  .footercontacto h4{
+    padding-top: 60px;
+  }
+
+}
